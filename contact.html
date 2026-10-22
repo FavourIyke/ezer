@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a call — Ezer</title>
+  <meta name="description" content="Tell Ezer about your brand, your goal, and the service you need.">
+  <meta name="theme-color" content="#0e0d0b">
+  <link rel="icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">Ezer</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a class="btn btn-light" href="contact.html">Book a call</a>
+    </nav>
+  </header>
+
+  <main id="main" class="contact-page">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="kicker">Book a call</p>
+        <h1 style="font-family: var(--serif); font-weight: 400; letter-spacing: -0.04em; line-height: 0.92; font-size: clamp(52px, 6vw, 84px); margin: 0 0 16px;">Tell us where you want to go.</h1>
+        <p class="lede">Share the brand, the goal, and the service you have in mind. We reply with a time, then recommend the package that fits.</p>
+        <div class="contact-points">
+          <p><span>Email</span><a href="mailto:hello@ezer.studio">hello@ezer.studio</a></p>
+          <p><span>WhatsApp</span><a href="https://wa.me/2348000000000">+234 800 000 0000</a></p>
+          <p><span>Hours</span>Monday to Friday, 9:00–18:00 WAT</p>
+          <p><span>Studio</span>Lagos · Abuja · Port Harcourt</p>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <form id="enquiry" novalidate>
+          <div class="hp" aria-hidden="true">
+            <label for="company">Company website</label>
+            <input id="company" name="company" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required autocomplete="name">
+              <p class="error" hidden>Add your name.</p>
+            </div>
+            <div class="field">
+              <label for="brand">Brand</label>
+              <input id="brand" name="brand" type="text" required autocomplete="organization">
+              <p class="error" hidden>Add the brand name.</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+              <p class="error" hidden>Add a valid email.</p>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="">Select</option>
+                <option>Social media management</option>
+                <option>Content bank</option>
+                <option>Growth marketing</option>
+                <option>Brand identity</option>
+                <option>Ad account setup</option>
+                <option>Ads issue fixing</option>
+                <option>Ad management</option>
+                <option>Influencer campaigns</option>
+                <option>Brand launch</option>
+                <option>Not sure yet</option>
+              </select>
+              <p class="error" hidden>Choose a service, or “Not sure yet”.</p>
+            </div>
+            <div class="field">
+              <label for="budget">Budget</label>
+              <select id="budget" name="budget">
+                <option value="">Optional</option>
+                <option>Under ₦350,000</option>
+                <option>₦350,000 – ₦1,000,000</option>
+                <option>₦1,000,000 – ₦1,500,000</option>
+                <option>₦1,500,000+</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">The goal</label>
+            <textarea id="message" name="message" required placeholder="What should be true in 90 days?"></textarea>
+            <p class="error" hidden>Tell us the goal in a sentence or two.</p>
+          </div>
+          <button class="btn btn-dark" type="submit">Send the brief</button>
+        </form>
+        <div class="form-success" hidden>
+          <h3>Brief is ready to send.</h3>
+          <p>This preview does not store enquiries. Email it, or replace the address in the script when a real inbox is ready.</p>
+          <a class="btn btn-dark" id="mailto-link" href="mailto:hello@ezer.studio">Email this enquiry</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="logo" href="index.html">Ezer</a>
+        <p>A social studio for brands that want the feed, the offer, and the ads to agree.</p>
+      </div>
+      <div>
+        <p class="footer-label">Visit</p>
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Book a call</a>
+      </div>
+      <div>
+        <p class="footer-label">Studio</p>
+        <p>Lagos<br>Abuja<br>Port Harcourt</p>
+      </div>
+      <div>
+        <p class="footer-label">Social</p>
+        <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://x.com" target="_blank" rel="noreferrer">X</a>
+        <a href="https://www.tiktok.com" target="_blank" rel="noreferrer">TikTok</a>
+      </div>
+    </div>
+    <div class="wrap legal">
+      <span>© 2026 Ezer</span>
+      <a href="mailto:hello@ezer.studio">hello@ezer.studio</a>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
